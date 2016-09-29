@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!DOCTYPE NSRDB SYSTEM "nsrdb.dtd">
+
+<!-- NSPRO RDB Extensible Markup Language -->
+<!-- NSRDB-XML version="1.0" -->
+
+<NSRDB>
+
+<DBOBJ MODULA="Device">
+  <NAME>ned811e</NAME>
+  <ALIAS>"ned811e"</ALIAS>
+  <OTHEROBJ>
+    Analogue(name="Ua" type="电压" cc2="0.058617")
+    Analogue(name="Ub" type="电压" cc2="0.058617")
+    Analogue(name="Uc" type="电压" cc2="0.058617")
+    Analogue(name="U0" type="电压" cc2="0.058617")
+    Analogue(name="Ia" type="电流" cc2="0.002931")
+    Analogue(name="Ib" type="电流" cc2="0.002931")
+    Analogue(name="Ic" type="电流" cc2="0.002931")
+    Analogue(name="I0h" type="电流" cc2="0.002931")
+    Analogue(name="I0l" type="电流" cc2="0.002931")
+    Analogue(name="Ima" type="电流" cc2="0.002931")
+    Analogue(name="Imb" type="电流" cc2="0.002931")
+    Analogue(name="Imc" type="电流" cc2="0.002931")
+    Analogue(name="DC1" type="电流" cc2="0.087925")
+    Analogue(name="DC2" type="电流" cc2="0.087925")
+    Analogue(name="DC3" type="电流" cc2="0.087925")
+    Analogue(name="Uab" type="电压" cc2="0.058617")
+    Analogue(name="Ubc" type="电压" cc2="0.058617")
+    Analogue(name="Uca" type="电压" cc2="0.058617")
+    Analogue(name="P" type="有功" cc2="0.507327")
+    Analogue(name="Q" type="无功" cc2="0.507327")
+    Analogue(name="S" type="视在" cc2="0.507327")
+    Analogue(name="COS" cc2="0.000586")
+    Analogue(name="F" type="周波" cc2="0.029308")
+    Analogue(name="Rt1" type="周波" cc2="0.146542")
+    Analogue(name="Rt2" type="周波" cc2="0.146542")
+    Analogue(name="Rt3" type="周波" cc2="0.146542")
+    Analogue(name="Rt4" type="周波" cc2="0.146542")
+    Analogue(name="Rt5" type="周波" cc2="0.146542")
+    Analogue(name="Rt6" type="周波" cc2="0.146542")
+    Digital(name="开1")
+    Digital(name="开2")
+    Digital(name="开3")
+    Digital(name="开4")
+    Digital(name="开5")
+    Digital(name="开6")
+    Digital(name="开7")
+    Digital(name="开8")
+    Digital(name="开9")
+    Digital(name="开10")
+    Digital(name="开11")
+    Digital(name="开12")
+    Digital(name="开13")
+    Digital(name="开14")
+    Digital(name="断路器跳位")
+    Digital(name="断路器合位")
+    Digital(name="手分")
+    Digital(name="手合")
+    Digital(name="备用")
+    Digital(name="备用")
+    Digital(name="备用")
+    Digital(name="告警")
+    Digital(name="动作")
+    Relay(name="遥控1" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控2" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控3" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控4" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控5" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控6" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控7" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控8" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控9" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Pulse(name="正向有功")
+    Pulse(name="正向无功")
+    Pulse(name="反向有功")
+    Pulse(name="反向无功")
+  </OTHEROBJ>
+  <DZH>ned811eDZH</DZH>
+  <MESSAGE>ned811eMSG</MESSAGE>
+</DBOBJ>
+
+
+<TABLE>
+  <NAME>ned811eMSG</NAME>
+  <ALIAS>"ned811eMSG"</ALIAS>
+  <FIELD>
+    FIELDINFO(name="信息表" type="VARCHAR")
+  </FIELD>
+  <RECORD>
+    "ned811eCPU1MSG" 
+  </RECORD>
+</TABLE>
+
+<TABLE>
+  <NAME>ned811eCPU1MSG</NAME>
+  <ALIAS>"ned811eCPU1MSG"</ALIAS>
+  <FIELD>
+    FIELDINFO(name="信息序号" type="VARCHAR")
+    FIELDINFO(name="信息名称" type="VARCHAR")
+  </FIELD>
+  <RECORD>
+    "1" "速断保护动作" 
+    "2" "过流保护动作" 
+    "3" "过负荷动作" 
+    "4" "负序过流Ⅰ段动作" 
+    "5" "负序过流Ⅱ段动作" 
+    "6" "零流Ⅰ段动作" 
+    "7" "零流Ⅱ段动作" 
+    "8" "零压Ⅰ段动作" 
+    "9" "零压Ⅱ段动作" 
+    "10" "低压侧零序过流动作"
+    "11" "低周减载动作" 
+    "12" "小电流接地动作" 
+    "13" "过流闭锁出口动作" 
+    "14" "过电压保护动作" 
+    "15" "低电压保护动作" 
+    "16" "变送器保护1告警动作 " 
+    "17" "变送器保护1跳闸动作" 
+    "18" "变送器保护2告警动作 " 
+    "19" "变送器保护2跳闸动作  " 
+    "20" "变送器保护3告警动作  " 
+    "21" "变送器保护3跳闸动作" 
+    "22" "温度保护1告警动作 " 
+    "23" "温度保护1跳闸动作  " 
+    "24" "温度保护2告警动作 " 
+    "25" "温度保护2跳闸动作 " 
+    "26" "温度保护3告警动作  " 
+    "27" "温度保护3跳闸动作 " 
+    "28" "温度保护4告警动作" 
+    "29" "温度保护4跳闸动作" 
+    "30" "温度保护5告警动作 " 
+    "31" "温度保护5跳闸动作" 
+    "32" "温度保护6告警动作"
+    "33" "温度保护6跳闸动作"
+    "34" "开关量1动作" 
+    "35" "开关量2动作" 
+    "36" "开关量3动作" 
+    "37" "开关量4动作" 
+    "38" "开关量5动作" 
+    "39" "开关量6动作" 
+    "40" "开关量7动作" 
+    "41" "开关量8动作" 
+    "42" "开关量9动作" 
+    "43" "开关量10动作" 
+    "44" "开关量11动作" 
+    "45" "开关量12动作" 
+    "46" "开关量13动作" 
+    "47" "开关量14动作"    
+  </RECORD>
+</TABLE>
+
+<TABLE>
+  <NAME>ned811eDZH</NAME>
+  <ALIAS>"ned811eDZH"</ALIAS>
+  <FIELD>
+    FIELDINFO(name="定值表" type="VARCHAR")
+  </FIELD>
+  <RECORD>
+    "ned811eCPU0DZH" 
+  </RECORD>
+</TABLE>
+
+<TABLE>
+  <NAME>ned811eCPU0DZH</NAME>
+  <ALIAS>"ned811eCPU0DZH"</ALIAS>
+  <FIELD>
+    FIELDINFO(name="定值表" type="VARCHAR")
+  </FIELD>
+</TABLE>
+
+</NSRDB>

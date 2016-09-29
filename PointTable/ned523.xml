@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE NSRDB SYSTEM "nsrdb.dtd">
+
+<!-- NSPRO RDB Extensible Markup Language -->
+<!-- NSRDB-XML version="1.0" -->
+
+<NSRDB>
+
+<DBOBJ MODULA="Device">
+  <NAME>ned523</NAME>
+  <ALIAS>"ned523"</ALIAS>
+  <OTHEROBJ>
+    Analogue(name="Ua" type="电压" cc2="0.058617")
+    Analogue(name="Ub" type="电压" cc2="0.058617")
+    Analogue(name="Uc" type="电压" cc2="0.058617")
+    Analogue(name="U0" type="电压" cc2="0.058617")
+    Analogue(name="Ia" type="电流" cc2="0.002931")
+    Analogue(name="Ib" type="电流" cc2="0.002931")
+    Analogue(name="Ic" type="电流" cc2="0.002931")
+    Analogue(name="I0" type="电流" cc2="0.000586")
+    Analogue(name="DC" type="电流" cc2="0.002931")
+    Analogue(name="Uab" type="电压" cc2="0.058617")
+    Analogue(name="Ubc" type="电压" cc2="0.058617")
+    Analogue(name="Uca" type="电压" cc2="0.058617")
+    Analogue(name="P" type="有功" cc2="0.507327")
+    Analogue(name="Q" type="无功" cc2="0.507327")
+    Analogue(name="S" type="视在" cc2="0.507327")
+    Analogue(name="COS" cc2="0.000586")
+    Analogue(name="F" type="周波" cc2="0.029308")
+    Digital(name="开1")
+    Digital(name="开2")
+    Digital(name="开3")
+    Digital(name="开4")
+    Digital(name="开5")
+    Digital(name="开6")
+    Digital(name="开7")
+    Digital(name="开8")
+    Digital(name="断路器分位")
+    Digital(name="断路器合位")
+    Digital(name="手分")
+    Digital(name="手合")
+    Relay(name="遥控1" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控2" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控3" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Relay(name="遥控4" type="遥控" reserve="遥控选择 遥控密码 遥控监护 ")
+    Pulse(name="正向有功")
+    Pulse(name="正向无功")
+    Pulse(name="反向有功")
+    Pulse(name="反向无功")
+  </OTHEROBJ>
+  <DZH>ned523DZH</DZH>
+</DBOBJ>
+
+<TABLE>
+  <NAME>ned523DZH</NAME>
+  <ALIAS>"ned523DZH"</ALIAS>
+  <FIELD>
+    FIELDINFO(name="定值表" type="VARCHAR")
+  </FIELD>
+  <RECORD>
+    "ned523CPU0DZH" 
+  </RECORD>
+</TABLE>
+
+<TABLE>
+  <NAME>ned523CPU0DZH</NAME>
+  <ALIAS>"ned523CPU0DZH"</ALIAS>
+  <FIELD>
+    FIELDINFO(name="定值表" type="VARCHAR")
+  </FIELD>
+</TABLE>
+
+</NSRDB>
